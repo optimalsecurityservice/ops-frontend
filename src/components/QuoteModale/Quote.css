@@ -1,0 +1,45 @@
+.quote-primary{
+  max-height: 90vh;
+  width: 80vw;
+  z-index: 9999;
+  background-color: #D5B964;
+  position: fixed;
+  padding: 30px 30px;
+  left: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 12px;
+  overflow-y: auto;
+}
+.quote-form-label {
+  color: #1b1b1b;
+  font-weight: 700;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif
+}
+.quote-form-input .placeholder {
+  color: "gray";
+}
+.quote-form-input {
+  margin-top: 10px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+}
+.quote-form-label input textarea {
+
+  color : #1b1b1b;
+
+}
+.quote-btn {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #1b1b1b;
+  color: #d5b964;
+  border: none;
+  width: 180px;
+  height: 40px;
+  border-radius: 14px;
+}

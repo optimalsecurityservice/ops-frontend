@@ -1,0 +1,39 @@
+.contact-form-label {
+  color: #d5b964;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+.contact-form-input {
+  width: 100%;
+  background-color: #1b1b1b;
+  border: 1px solid #d5b964;
+  border-radius: none;
+  margin-top: 12px; 
+  color : #d5b964;
+}
+.contact-form-input input[type="text"] {
+  color : #d5b964;
+
+}
+.contact-form-message input textarea{
+  color : #d5b964;
+
+}
+.contact-form-message{
+  width: 100%;
+  background-color:  #1b1b1b;
+  border: 1px solid #d5b964;
+  border-radius: none;
+  margin-top: 12px; 
+  color : #d5b964;
+}
+.contact-btn{
+    margin-right: auto;
+  margin-left: auto;
+  background-color: #d5b964;
+  color: 1b1b1b;
+  border: none;
+  width: 180px;
+  height: 40px;
+  border-radius: 14px;
+}
