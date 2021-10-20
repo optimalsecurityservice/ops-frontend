@@ -125,16 +125,16 @@ function ServicesPage() {
       className="d-flex flex-column align-items-center col-12"
     >
       <h4
-        className="col-lg-11 col-12"
+        className="col-lg-11 col-11"
         style={{ color: "#d5b964", marginTop: "60px", marginBottom: "30px", fontFamily: `'Roboto', sans-serif` }}
       >
         Services that we provide:
       </h4>
       {arr.map((s, k) => {
         return (
-          <div k={s.id} className="col-lg-11 col-12 mt-2 mb-2">
+          <div k={s.id} className="col-lg-11 col-11 mt-2 mb-2 d-flex flex-column align-items-center">
             <div
-              className="col-lg-11 col-11 d-flex fd-column "
+              className="col-lg-11 col-12 d-flex fd-column "
               style={{
                 height: "50px",
                 backgroundColor: "#d5b964",
