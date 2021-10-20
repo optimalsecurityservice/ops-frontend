@@ -7,23 +7,23 @@ import ContactPage from "./pages/ContactPage";
 import ServicesPage from "./pages/ServicesPage";
 import { Switch, Route, Redirect } from "react-router-dom";
 import {
-   BrowserRouter as Router
+  BrowserRouter as Router
 } from 'react-router-dom';
 
 function App() {
 
   return (
-    <Router>
-      <Nav />
-      <Switch>
-        <Route path="/home" component={HomePage} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/services" component={ServicesPage} />
-        <Route path="/services/:name" component={ServicesPage} />
-        <Route render={() => <Redirect to={`/home`} />} />
-      </Switch>
-      <Footer />
-    </Router>
+     <Router>
+        <Nav />
+        <Switch>
+          <Route path="/home" component={HomePage} />
+          <Route path="/contact" component={ContactPage} />
+          <Route path="/services" component={ServicesPage} />
+          <Route path="/services/:name" component={ServicesPage} />
+          <Route render={() => <Redirect to={`/home`} />} />
+        </Switch>
+        <Footer />
+      </Router>
   );
 }
 

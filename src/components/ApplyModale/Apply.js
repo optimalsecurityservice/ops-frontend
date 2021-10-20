@@ -85,7 +85,7 @@ function Apply({ setApply }) {
               alignItems: "center",
             }}
           >
-            <div className="d-flex flex-row flex-wrap col-lg-11 justify-content-lg-between p-0">
+            <div className="d-flex flex-lg-row flex-column flex-wrap col-lg-11 col-12 justify-content-lg-between">
               <div className="d-flex flex-column col-lg-5 col-12 mt-2 p-2">
                 <label className="apply-form-label">First Name*</label>
                 <input

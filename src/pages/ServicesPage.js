@@ -75,19 +75,27 @@ let Services = [
 ];
 
 function ServicesPage() {
-  let location = window.location.href;
-  location = location.split("/");
-  location = location[location.length - 1];
-  location = location.replaceAll("%20", " ");
 
-  if (location && location !== "services") {
-    Services.map((i) => {
-      if (i.title === location) i.active = true;
-      else i.active = false;
-      return i;
-    });
-  } else {
+
+  if (window && window.location) {
+    let location = window.location.href;
+    location = location.split("/");
+    location = location[location.length - 1];
+    location = location.replaceAll("%20", " ");
+
+    if (location && location !== "services") {
+      Services.map((i) => {
+        if (i.title === location) {
+          i.active = true;
+        }
+        else i.active = false;
+
+        return i;
+      });
+    } else {
+    }
   }
+
 
   const reducer = (services, action) => {
     if (action.type === "toggle-active") {
@@ -118,7 +126,7 @@ function ServicesPage() {
     >
       <h4
         className="col-lg-11 col-12"
-        style={{ color: "#d5b964", marginTop: "60px", marginBottom: "30px", fontFamily: `'Roboto', sans-serif`}}
+        style={{ color: "#d5b964", marginTop: "60px", marginBottom: "30px", fontFamily: `'Roboto', sans-serif` }}
       >
         Services that we provide:
       </h4>
@@ -133,7 +141,7 @@ function ServicesPage() {
                 alignItems: "center",
                 border: "none",
                 cursor: "pointer",
-                padding: "6px 24px",  
+                padding: "6px 24px",
               }}
               onClick={(e) =>
                 dispatch({
@@ -142,7 +150,7 @@ function ServicesPage() {
                 })
               }
             >
-              <h5 style={{fontFamily: `'Roboto', sans-serif`,color:"black",fontWeight:"700"}}> {s.title}</h5>
+              <h5 style={{ fontFamily: `'Roboto', sans-serif`, color: "black", fontWeight: "700" }}> {s.title}</h5>
               <img
                 src={icon}
                 alt=""
