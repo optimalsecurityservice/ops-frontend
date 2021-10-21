@@ -41,20 +41,13 @@ function Body() {
             className="left-pos"
             onClick={(e) => setI(i === 0 ? 2 : i - 1)}
           >
-            <img className="home-img"
-              
-              src={arrow}
-              alt=""
-            />
+            <img className="home-img" src={arrow} alt="" />
           </button>
           <button
             className="right-pos"
             onClick={(e) => setI(i === 2 ? 0 : i + 1)}
           >
-            <img className="home-img-r"
-              src={arrow}
-              alt=""
-            />
+            <img className="home-img-r" src={arrow} alt="" />
           </button>
           <div className="col-12 d-flex flex-row justify-content-center">
             <span
@@ -85,19 +78,17 @@ function Body() {
           fontFamily: `'Roboto', sans-serif`,
         }}
       >
-        A young company promising you the quality and competence you’d expect
-        from any established one. Thanks to the 10 years of valuable experience
-        in the field of security, we know every aspect about this field, and we
-        are familiar with the depths and demands of the job. We’ll deliver the
-        upmost professional services at reasonable costs. <br /> No, our guards
-        won’t sleep during nightshifts. The guards will be trained and become a
-        solid asset to the site they’re posted to. The goal is to assure your
-        safety and security in efficient ways. Our team will be handpicked
-        carefully and sent out to sites they’re most suitable for. You’d find
-        our guards well trained, competent, and right for your site. Most
-        importantly, our clients will know they’re secure and in the right
-        hands. Experience the quality of an established company that suits your
-        affordability.
+        A young company promising you the quality and competence of an
+        established one. Thanks to the 10 years of valuable experience in the
+        field of security, we’ve learned and understood each aspect of this
+        industry. We’ll deliver the upmost professional services at reasonable
+        costs. <br/> <br/> No, our guards won’t sleep during nightshifts. The guards will be
+        trained and become a solid asset to the site they’re posted to. The goal
+        is to assure your safety and security in efficient ways. Our team will
+        be handpicked carefully and sent out to sites they’re most suitable for.
+        You’d find our guards well trained, competent, and right for your
+        location. <br/> <br/> Most importantly, our clients will know they’re secure and in
+        the right hands.
       </p>
       <div
         className="col-lg-10 col-12"

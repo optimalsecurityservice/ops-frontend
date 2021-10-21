@@ -9,6 +9,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import {
   BrowserRouter as Router
 } from 'react-router-dom';
+import ScrollTop from "./components/Scroll Top";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route render={() => <Redirect to={`/home`} />} />
         </Switch>
         <Footer />
+        <ScrollTop/>
       </Router>
   );
 }

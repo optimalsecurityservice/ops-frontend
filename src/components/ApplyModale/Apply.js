@@ -159,8 +159,7 @@ function Apply({ setApply }) {
               </div>
               <div className="col-12 d-flex flex-column mt-4">
                 <h6 style={{ color: "black", fontSize: "15pt" ,fontFamily: `'Roboto', sans-serif`}}>
-                  Are you licensed Security Guard in Ontario with valid First
-                  Aid/CPR Certification?
+                Do you have a valid Security Guard Licence and First Aid/CPR Certification?
                 </h6>
                 <h6
                   style={{
